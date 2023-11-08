@@ -1,6 +1,7 @@
 package fr.iut.editeur.commande.factory;
 
 import fr.iut.editeur.commande.*;
+import fr.iut.editeur.commande.invoker.CommandeClear;
 import fr.iut.editeur.document.Document;
 
 public class CommandeFactory {
@@ -18,7 +19,7 @@ public class CommandeFactory {
 
     public Commande createCommand(String name, Document document, String[] parameters) {
         switch (name) {
-
+            case "clear" : return  new CommandeClear(document,parameters);
             case "effacer" : return new CommandeEffacer(document,parameters);
             case "masjuscule" : return new CommandeMajuscule(document,parameters);
             case "remplacer" : return new CommandeRemplacer(document, parameters);
