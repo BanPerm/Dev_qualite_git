@@ -18,6 +18,7 @@ public class CommandeFactory {
 
     public Commande createCommand(String name, Document document, String[] parameters) {
         switch (name) {
+
             case "effacer" : return new CommandeEffacer(document,parameters);
             case "masjuscule" : return new CommandeMajuscule(document,parameters);
             case "remplacer" : return new CommandeRemplacer(document, parameters);
