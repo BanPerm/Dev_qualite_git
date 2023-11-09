@@ -17,4 +17,8 @@ public class CommandeMajuscule extends CommandeDocument{
         this.document.majuscules(debut,fin);
         super.executer();
     }
+
+    public String getDescriptionCommande(){
+        return "Je permet de mettre en majuscule des lettres dans mon éditeur \n ma syntaxe est majuscule;debut;fin";
+    }
 }

@@ -18,4 +18,8 @@ public class CommandeRemplacer extends CommandeDocument{
         this.document.remplacer(debut,fin,texte);
         super.executer();
     }
+
+    public String getDescriptionCommande(){
+        return "Je permet de remplacer des lettres dans mon éditeur \n ma syntaxe est remplacer;debut;fin;texte";
+    }
 }
