@@ -12,7 +12,7 @@ public class CommandeClear extends CommandeDocument {
             System.err.println("Format clear : clear;");
             return;
         }
-        this.document.effacer(0,document.getTexte().length() - 4);
+        this.document.effacer(0,document.getTexte().length());
         super.executer();
     }
 }
