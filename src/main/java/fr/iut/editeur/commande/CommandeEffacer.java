@@ -17,8 +17,4 @@ public class CommandeEffacer extends CommandeDocument{
         this.document.effacer(debut,fin);
         super.executer();
     }
-
-    public String getDescriptionCommande(){
-        return "Je permet d'effacer des mot dans mon éditeur \n ma syntaxe est effacer;debut;fin";
-    }
 }
