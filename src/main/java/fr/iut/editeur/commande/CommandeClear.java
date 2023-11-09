@@ -15,4 +15,8 @@ public class CommandeClear extends CommandeDocument {
         this.document.effacer(0,document.getTexte().length());
         super.executer();
     }
+
+    public String getDescriptionCommande(){
+        return "Je permet de clear tout les mots dans mon éditeur \n ma syntaxe est clear;";
+    }
 }
