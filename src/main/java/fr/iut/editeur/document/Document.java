@@ -48,4 +48,8 @@ public class Document {
     public void inserer(int start, String texte) {
         remplacer(start,start,texte);
     }
+
+    public void minuscules(int start, int end) {
+        remplacer(start,end,texte.substring(start,end).toLowerCase(Locale.ROOT));
+    }
 }
