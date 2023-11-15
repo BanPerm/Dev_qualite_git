@@ -4,37 +4,37 @@ import java.util.Locale;
 
 public class Document {
 
-    private String texte;
+    private String texteDocument;
 
     public Document() {
-        this.texte = "";
+        this.texteDocument = "";
     }
 	
-    public String getTexte() {
-        return texte;
+    public String getTexteDocument() {
+        return texteDocument;
     }
 
-    public void setTexte(String texte) {
-        this.texte = texte;
+    public void setTexteDocument(String texteDocument) {
+        this.texteDocument = texteDocument;
     }
 
-    public void ajouter(String texte) {
-        this.texte += texte;
+    public void ajouter(String texteDocument) {
+        this.texteDocument += texteDocument;
     }
 
     @Override
     public String toString() {
-        return this.texte;
+        return this.texteDocument;
     }
 
     public void remplacer(int start, int end, String remplacement) {
-        String leftPart = texte.substring(0, start);
-        String rightPart = texte.substring(end);
-        texte = leftPart + remplacement + rightPart;
+        String leftPart = texteDocument.substring(0, start);
+        String rightPart = texteDocument.substring(end);
+        texteDocument = leftPart + remplacement + rightPart;
     }
 
     public void majuscules(int start, int end) {
-        remplacer(start,end,texte.substring(start,end).toUpperCase(Locale.ROOT));
+        remplacer(start,end,texteDocument.substring(start,end).toUpperCase(Locale.ROOT));
     }
 
     public void effacer(int start, int end) {
@@ -42,14 +42,14 @@ public class Document {
     }
 
     public void clear() {
-        remplacer(0,texte.length(),"");
+        remplacer(0,texteDocument.length(),"");
     }
 
-    public void inserer(int start, String texte) {
-        remplacer(start,start,texte);
+    public void inserer(int start, String texteDocument) {
+        remplacer(start,start,texteDocument);
     }
 
     public void minuscules(int start, int end) {
-        remplacer(start,end,texte.substring(start,end).toLowerCase(Locale.ROOT));
+        remplacer(start,end,texteDocument.substring(start,end).toLowerCase(Locale.ROOT));
     }
 }
