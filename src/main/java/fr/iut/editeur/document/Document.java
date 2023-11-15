@@ -9,15 +9,27 @@ public class Document {
     public Document() {
         this.texteDocument = "";
     }
-	
+
+    /**
+     * hello
+     * @return
+     */
     public String getTexteDocument() {
         return texteDocument;
     }
 
+    /**
+     * test666
+     * @param texteDocument
+     */
     public void setTexteDocument(String texteDocument) {
         this.texteDocument = texteDocument;
     }
 
+    /**
+     * white
+     * @param texteDocument
+     */
     public void ajouter(String texteDocument) {
         this.texteDocument += texteDocument;
     }
@@ -27,6 +39,12 @@ public class Document {
         return this.texteDocument;
     }
 
+    /**
+     * fuehgruhyfgrhejgfhjhre,nfjhrhj
+     * @param start
+     * @param end
+     * @param remplacement
+     */
     public void remplacer(int start, int end, String remplacement) {
         String leftPart = texteDocument.substring(0, start);
         String rightPart = texteDocument.substring(end);
@@ -37,6 +55,11 @@ public class Document {
         remplacer(start,end,texteDocument.substring(start,end).toUpperCase(Locale.ROOT));
     }
 
+    /**
+     * Description
+     * @param start
+     * @param end
+     */
     public void effacer(int start, int end) {
         remplacer(start,end,"");
     }
@@ -45,6 +68,11 @@ public class Document {
         remplacer(0,texteDocument.length(),"");
     }
 
+    /**
+     * tu est
+     * @param start
+     * @param texteDocument
+     */
     public void inserer(int start, String texteDocument) {
         remplacer(start,start,texteDocument);
     }

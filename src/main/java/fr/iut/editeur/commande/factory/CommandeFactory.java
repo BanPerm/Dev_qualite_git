@@ -17,6 +17,13 @@ public class CommandeFactory {
 
     private CommandeFactory() {}
 
+    /**
+     * JE test des trucs
+     * @param name
+     * @param document
+     * @param parameters
+     * @return
+     */
     public Commande createCommand(String name, Document document, String[] parameters) {
         switch (name) {
             case "clear" : return  new CommandeClear(document,parameters);
