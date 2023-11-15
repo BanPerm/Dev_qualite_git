@@ -15,4 +15,8 @@ public class CommandeClear extends CommandeDocument {
         this.document.effacer(0,document.getTexte().length());
         super.executer();
     }
+    @Override
+    public String getDescriptionCommande(){
+        return "Je permet d'ajouter des mot dans mon éditeur \n ma syntaxe est ajouter;texte";
+    }
 }

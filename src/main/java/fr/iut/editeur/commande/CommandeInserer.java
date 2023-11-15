@@ -17,4 +17,8 @@ public class CommandeInserer extends CommandeDocument{
         this.document.inserer(debut, texte);
         super.executer();
     }
+    @Override
+    public String getDescriptionCommande(){
+        return "Je permet d'ajouter des mot dans mon éditeur \n ma syntaxe est ajouter;texte";
+    }
 }

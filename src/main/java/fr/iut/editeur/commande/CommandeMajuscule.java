@@ -17,4 +17,8 @@ public class CommandeMajuscule extends CommandeDocument{
         this.document.majuscules(debut,fin);
         super.executer();
     }
+    @Override
+    public String getDescriptionCommande(){
+        return "Je permet d'ajouter des mot dans mon éditeur \n ma syntaxe est ajouter;texte";
+    }
 }

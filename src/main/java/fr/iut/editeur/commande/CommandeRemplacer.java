@@ -18,4 +18,8 @@ public class CommandeRemplacer extends CommandeDocument{
         this.document.remplacer(debut,fin,texte);
         super.executer();
     }
+    @Override
+    public String getDescriptionCommande(){
+        return "Je permet d'ajouter des mot dans mon éditeur \n ma syntaxe est ajouter;texte";
+    }
 }

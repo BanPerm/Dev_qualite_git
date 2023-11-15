@@ -16,4 +16,8 @@ public class CommandeMinuscule extends CommandeDocument {
         this.document.minuscules(debut,fin);
         super.executer();
     }
+    @Override
+    public String getDescriptionCommande(){
+        return "Je permet d'ajouter des mot dans mon éditeur \n ma syntaxe est ajouter;texte";
+    }
 }

@@ -17,4 +17,8 @@ public abstract class CommandeDocument implements Commande {
     public void executer() {
         System.out.println(this.document);
     }
+    @Override
+    public String getDescriptionCommande(){
+        return "Je permet d'ajouter des mot dans mon éditeur \n ma syntaxe est ajouter;texte";
+    }
 }
